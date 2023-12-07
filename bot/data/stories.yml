@@ -1,0 +1,84 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  #   - story: sad path 2
+  #     steps:
+  #       - intent: greet
+  #       - action: utter_greet
+  #       - intent: mood_unhappy
+  #       - action: utter_cheer_up
+  #       - action: utter_did_that_help
+  #       - intent: deny
+  #       - action: utter_goodbye
+
+  #   - story: User greets and books an appointment
+  #     steps:
+  #       - intent: greet
+  #       - action: utter_greet
+  #       - intent: book_appointment
+  #       - action: utter_book_appointment
+  #       - intent: affrim
+  #       - action: utter_ok
+  #       - action: action_book_appointment
+
+  ###################################
+  #     - action: utter_confirmation
+
+  # - story: User cancels an appointment
+  #   steps:
+  # - intent: greet
+  # - action: utter_greet
+  #     - intent: cancel_appointment
+  #     - action: action_cancel_appointment
+  #     - action: utter_cancellation_confirmation
+
+  # - story: User denies booking an appointment
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: deny
+  #     - action: utter_goodbye
+  # version: "2.0"
+  # stories:
+  - story: book_appointment
+    steps:
+      - intent: book_appointment
+      - action: action_book_appointment
+      - action: validate_appointment_type
+      - action: validate_appointment_time
+      - action: schedule_appointment
+      - action: confirm_appointment
+
+  - story: cancel_appointment
+    steps:
+      - intent: cancel_appointment
+      - action: find_appointment
+      - action: cancel_appointment
+
+  - story: ask_availability
+    steps:
+      - intent: ask_availability
+      - action: check_availability
+
+  - story: ask_confirmation
+    steps:
+      - intent: ask_confirmation
+      - action: find_appointment
+      - action: confirm_appointment
