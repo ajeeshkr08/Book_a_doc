@@ -1,0 +1,203 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - lets go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: book_appointment
+    examples: |
+      - Id like to book an appointment
+      - Can I schedule a doctors appointment?
+      - Book an appointment with a physician
+      - book appointment
+      - schedule appointment
+      - appointment booking
+      - reserve time with doctor
+      - book an appointment
+      - make an appointment
+      - schedule an appointment
+      - I need to cancel my appointment with date at time.
+      - Cancel my meeting scheduled for date at time.
+      - I want to cancel an appointment.
+
+  # - intent: c
+  # - intent: cancel_appointment
+  #   examples: |
+  #     - I want to cancel my appointment
+  #     - How can I cancel my doctors appointment?
+  #     - Cancel the scheduled visit
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - ok
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I dont think so
+      - dont like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I dont feel very well
+      - I am disappointed
+      - super sad
+      - Im so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: cancel_appointment
+    examples: |
+      - cancel appointment
+      - delete appointment
+      - remove scheduled time
+      - cancel my appointment
+      - reschedule my appointment
+      - I need to cancel my appointment with Name on time at time.
+      - Cancel my meeting scheduled for date at time.
+      - I want to cancel an appointment.
+
+  - intent: opening_hours
+    examples: |
+      - what are your opening hours
+      - when are you open
+      - business hours
+  # version: "2.0"
+  # nlu:
+  # - intent: book_appointment
+  #  examples: |
+  #     - book an appointment
+  #     - make an appointment
+  #     - schedule an appointment
+
+  # - intent: cancel_appointment
+  #  examples: |
+  #     - cancel my appointment
+  #     - reschedule my appointment
+
+  - intent: ask_availability
+    examples: |
+      - check for availability
+      - when is the next available time
+
+  - intent: ask_confirmation
+    examples: |
+      - confirm the appointment
+      - is the appointment confirmed
+
+  - intent: book_appointment
+    examples: |
+      - I want to book an appointment with Dr. Name on date at time.
+      - Can I schedule a meeting with Dr. Name?
+      - Book an appointment for me on date at time.
+
+  - intent: cancel_appointment
+    examples: |
+
+  - intent: reschedule_appointment
+    examples: |
+      - I want to reschedule my appointment with Dr. Name on date at time.
+      - Reschedule my meeting for date at time.
+      - Change my appointment to a different date and time.
+
+  - intent: doctor_suggestion
+    examples: |
+      - Can you suggest a doctor for specialty?
+      - I need recommendations for a specialty doctor.
+      - Who is the best specialty doctor available?
+
+  - intent: check_availability
+    examples: |
+      - Is Dr. Name available on date at time?
+      - Check if I can get an appointment on date with Dr. Name.
+      - What are the available slots for Dr. Name?
+
+  - intent: doctor
+    examples: |
+      - Dr. Name
+      - Another Dr. Name
+
+  - intent: date
+    examples: |
+      - today
+      - tomorrow
+      - specific date
+
+  - intent: time
+    examples: |
+      - 10 AM
+      - 3:30 PM
+      - specific time
+
+  - intent: specialty
+    examples: |
+      - cardiology
+      - dermatology
+      - neurology
